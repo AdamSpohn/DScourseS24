@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Feb 20 01:36:28 CST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-018d-c571-d569-000018ac13a0 
+on database directory /home/ouecon014/DScourseS24/ProblemSets/PS4/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@c7255fe 
+Loaded from file:/opt/oscer/software/Spark/2.0.0/jars/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_80-b15
+user.dir=/home/ouecon014/DScourseS24/ProblemSets/PS4
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-1127.el7.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
