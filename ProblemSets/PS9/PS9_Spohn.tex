@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{PS9_Spohn}
+\author{adam spohn}
+\date{April 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+After coding the "recipe" the dimensions of housing\_training is 404 observations over 14 variables. This is the same number of variables as the original housing data. However, the housing\_train\_x has 74 variables. 
+\section{LASSO}
+The optimal lambda is 0.005689866.
+The in sample rmse is 1.964934.
+The out of sampple rmse is 0.170
+
+\section{Ridge Regression}
+The optimal lambda is 0.03727594.
+The in sample rmse is 1.959118
+The out of sample rmse is  0.1733747
+
+
+\section{Other questions}
+If there are more columns than rows, than you could still be able to make a linear regression if you employed some methods,like dimension reduction using PCA for example. 
+LASSO has a higher bias, but lower variance when compared to Ridge Regression. This hints that it lends more towards being a simpler model or underfit. 
+The Ridge Regression model has lower bias but higher variance when compared to LASSO, hinting that it might be more complex, and overfit compared to LASSO.
+\end{document}
