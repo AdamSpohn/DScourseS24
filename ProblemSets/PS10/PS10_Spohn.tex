@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{PS10_Spohn}
+\author{adam spohn}
+\date{April 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+I had an issue where trying to print the final table it would not all fit on the page, so I split it up into four tables for visibility. Additionally, as discussed through email I had trouble with the SVM model. I ended up letting it run for 6 hours before I stopped it, so I beleive the error I had must have been causing something to go wrong. So that model is not included here.
+
+\section{Logit Table}
+
+
+\input{logit_ans.tex}
+
+\section{Tree Table}
+\input{best_tree.tex}
+\section{nnet Table}
+\input{best_nnet.tex}
+\section{knn Table}
+\input{best_knn.tex}
+
+\section{out of sample accuracy}
+The following is the accuracy for each model
+- logit .8526
+- tree .8684
+- nnet .8326
+- knn .8433
+
+Based on this it seems like Tree and Logit were the most accurate
+\end{document}
+
+
