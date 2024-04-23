@@ -1,0 +1,113 @@
+\documentclass[12pt,english]{article}
+\usepackage{mathptmx}
+
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{darkblue}{RGB}{0.,0.,139.}
+
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{lipsum}
+
+\usepackage[authoryear]{natbib}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{pdflscape}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 0},backref=false,
+ colorlinks,citecolor=black,filecolor=black,
+ linkcolor=black,urlcolor=black]
+ {hyperref}
+\usepackage[all]{hypcap} % Links point to top of image, builds on hyperref
+\usepackage{breakurl}    % Allows urls to wrap, including hyperref
+
+\linespread{2}
+
+\begin{document}
+
+\begin{singlespace}
+\title{Global Warming and Tornado Alley
+\thanks{Acknowledgements here, if any.}}
+\end{singlespace}
+
+\author{Adam Spohn\thanks{Department of Economics, University of Oklahoma.\
+E-mail~address:~\href{mailto:spohn@ou.edu}{spohn@ou.edu}}}
+
+% \date{\today}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+\begin{singlespace}
+A short summary of what question the project answers, what methods are used, and any policy (or business) implications from the findings.
+\end{singlespace}
+
+\end{abstract}
+\vfill{}
+
+
+\pagebreak{}
+
+
+\section{Introduction}\label{sec:intro}
+\hspace{1cm} This paper seeks to find the existence of a shift in tornado occurrences, and if one exists try to investigate a possible relationship between this shift and warming temperatures. This topic is of personal interest to me as someone who is from around the traditional "tornado alley". I have also frequently heard that it was shifting so I wanted to investigate if this was true. Much more recently I had heard arguments that this is a result of global warming, so I thought this could be an interesting relationship to pursue. I believe that these are both important questions to answer. If there is a new geographic area and new populous that is starting to receive more tornadoes, or will receive more tornadoes in the future, they may not be as prepared as a tornado alley populous that has been seeking shelter from them for so long. It would also be important to know whether they had an odd year or two where they received more, or if they should be expecting to continuously be receiving more in the future. Additionally, if a trend like this does in fact exist, understanding whether it is just the result of a natural cycle, or the result of human activity or climate change is important as well. If it is a result of climate change, that might mean that there are changes we could make in our behavior that could lend to differences in tornado behavior. It would be bold to assume that we could start controlling them just by changing our behavior, but it is still important to try to understand what consequences of it may or may not exist. My paper attempts to answer this question using econometrics, and tests for relationships historical tornado occurrences, and historical data on weather variables within the United States. 
+
+\section{Literature Review}\label{sec:litreview}
+
+\hspace{1cm} Literature of other research on this topic seems to generally be consistent on this topic. There are many significant findings on changes in frequency of tornadoes. One paper studied shifts in location of tornadoes based on different weather variables, including comparing unusually hot and unusually cold years, using a wide variety of methods, though often making use of composite analysis. One of my own questions is if there is any global warming to have an effect on tornadoes in the first place. That may be complex to exactly answer but the research by Cao, Cai and Zhang does find that there have been an increase in air temperatures in the United States over the last few decades, and these differences in air temperatures are what they used to test the effect of warming temperatures on tornado locations. finds that "over the latest 30-year warming period stronger tornado activities have made a statistically-significant geographic shift eastward, northeastward, and southeastward."\cite{Cao2021} On top of shifting tornado activity, it also discusses how supporting elements to make a tornado such as low warm centers and low pressure zones are also shifting. Lastly, this paper mentions that there is a relationship between a warming climate and tornado activity, but it is difficult to determine whether this is a result of natural cycles, or human influence, a question that would be important to answer to decide if there are possible responses to this research. \\
+Another paper used observations of tornado locations and tornado supporting environments in a Thiel-Sen Slope analysis in order to observe any shifts over time. They used something called STP (Significant Tornado Parameter) as an indicator of tornado environments. STP is an index of conditions that can lead to F2-F5 scale tornadoes\cite{noaa}. The Thiel-Sen analysis found that "Both tornado reports and environments indicate significant decreasing trends in frequency over portions of Texas, Oklahoma, and northeast Colorado[and]...significant increasing trends in portions of Mississippi, Alabama, Arkansas, Missouri, Illinois, Indiana, Tennessee, and Kentucky."\cite{Vittorio2018}  This research was mainly focused on the shift in tornado occurrences, and did not have findings in relation to being caused by climate change, but it does compliment the previous paper that tornado observations do seem to be shifting. Furthermore both papers appear to be in agreement that it is an eastward shift, along with southeastward and northeastward movement as well. Confirming that this shift is in fact happening was another significant finding for my own research. Though this research pointed out that the southeast may be a vulnerable population to tornadoes, thus important to respond in some way to this new increase. \\
+Now that we have shown with confidence that a shift in locations is happening, I want to discuss a paper by Nouri, Devenini, Were and Khanbilvardi that tries to explain these trends. One of their focuses was on the difficulty in older decades to collect tornado data, so they use Doppler radar installations as measure of better detection, and population density is also used as a human factor that may have effected observations. Another notable group of variables this paper used is a lot of environmental variables such as an El-Nino Oscillation variable. I do not have such variables in my own research. Their research used a hierarchical Bayesian inference framework, and they found that "The two anthropogenic covariates explained 17\%, 28\%, and 19\% of the variance in the annual tornado frequency on average across Tornado Alley, Dixie Alley, and Other States,[and]...climate covariates brought additional explanation in the order of 15\%, 11\%, and 5\% on average in the three groups, respectively raising their total average explained variance to 32\%, 40\%, and 24\%."\cite{Nouri2021} They summarized that Population Density was a significant predictor for "Dixie Alley" states but not "tornado alley" states. In turn Doppler Radar installations were the best explanation for trends in tornado alley. This seems to infer that modern differences has had a pretty significant impact on observational trends. Though with that being said there does still seem to be a large impact played by the climate as well.This paper does not explicitly focus on changing temperatures as a large factor of changing trends, but temperature is a part of a complex system that is our climate. As an Oklahoman, another notable comment on this paper was that Oklahoma was one of the highest states in variability in tornadoes per year.\\ 
+There do appear to be other differences in recent tornado appearances. A study by Moore and DeBoer focuses on differences in the rate at which tornadoes are occurring on a given day, along side the spatial shift. While they are not certain why, they found that "the number of days per year with at least one (E)F1+ tornado decreased between 1954 and 2013 whereas the number of days per year with more than 30 increased."\cite{Moore2019} One interesting thing about this is how it relates to the spatial shift we have seen pointed out in all the other literature. These increases in big tornado days seem to be focused in the southeast, and appears to play a large part in explaining the greater amount of tornado appearances over the amount seen in the Great Plains. "The annual count of (E)F1+ tornadoes in the SE \& [lower Midwest] significantly increased when all (E)F1+ tornadoes are considered...when those that occurred on the big days are removed, however, the increasing trend goes away."\cite{Moore2019} One theory discussed by this paper was that Arctic warming is causing an increase in tornado activity due to a connection between arctic conditions and mid-latitude severe weather reactions. This is something I had heard about before and led me to this research topic. It is only theorized and not proven, though it would have great significance in relation to global warming if it were true. As far as my own testing goes I do not have arctic data, so I will not be able to observe this. Lastly, one thing they did with their data was exclude EF(0), because they especially reflected increasing trends as a result of better detection methods, so I thought this would be important to consider in my own research. 
+    
+
+\section{Data}\label{sec:data}
+The primary source of tornado data for this research comes from a data table from Kaggle, whose data was collected from the NOAA's Storm Prediction Center. Some important varibles that come from this data set are the year it came from, the fips code that allows us to track the data at the county level, the F or EF scale, and coordinates that allow for precise mapping and location information. Additionally, I have a data set from GitHub on historical county level temperatures and precipitation. Variables from this data set includes monthly averages for daily highs and daily lows in temperature in degrees Celsius for the months of January and July. The other significant variable from this data set is the amount of precipitation in January or July in (Idk what units, need to find this out). The summary statistics are for the merge of these two data sets are in table 1 (not in document yet)
+This data has the same issue as mentioned in many of the other papers in the literature review, that technology for making tornado observations has improved, which would bias the number, and potentially location of observations over time. I hope to mitigate this issue by removing the observations where there is a 0 for the EF scale. This is because, as suggested by the literature review, these observations may skew the data the most in relation to technology improvements. An alternative method would be to only use more recent years, and I tried this alongside only excluding EF0's and tried comparing them later. A separate issue with the data is that it uses the F (Fujita) scale up to a certain date, then it uses the EF (Enhanced Fujita) scale from that date forward. However, I do not use or compare the EF scales much in my analysis outside of excluding the EF0s, so this should not necessarily be an issue for this project. 
+
+
+
+\section{Empirical Methods}\label{sec:methods}
+The main model I used in this project is represented in the following equation:
+
+\begin{equation}
+Y_{it} = \alpha_0 + \alpha_1 Z_{it} + \alpha_2 W_{it} + \alpha_3 X_{it} + \varepsilon_{it}
+\end{equation}
+\hspace{1cm} Where $Y_{it}$ represents the longitude or latitude coordinate of a tornado event $i$ in year $t$, $Z_{it}$ represents the mean maximum temperature in July for the tornado event $i$ in year $t$, $W_{it}$ represents the mean precipitation in July for the tornado event $i$ in year $t$, and $X_{it}$ represents the year in which the tornado event $i$ occurred. The parameters of interest are $\alpha_1$, $\alpha_2$, and $\alpha_3$, which capture the effects of mean maximum temperature in July, mean precipitation in July, and year, respectively, on the tornado longitude or latitude coordinates for a specific event in a specific year.\\
+I ran this model with three different data sets. My entire data set, a subset of that data set excluding EF0s, and a subset of that data set excluding pre-1970. 
+
+
+\section{Research Findings}\label{sec:results}
+The results from my whole data set are reported in Table \ref{tab:estimates}.
+The estimate alpha one can be interpreted as an increase in one degree Celsius of the mean of the daily max temperatures in July would be met with a westward shift in the longitude by 0.306 degrees and a southward shift in latitude by 1.399 degrees of a tornado's occurrence.\\
+The estimate alpha two can be interpreted as an increase in one unit (need to find out meaning of unit) of precipitation in July would be met with a eastward shift of 1.960 degrees and a southward shift of 0.966 degrees of a tornado's occurrence.\\
+The estimate alpha 3 can be estimated as the change in longitude or latitude in exact units that occurs as a result of a tornado occurring in that year. Notably positive numbers reflect east or north, and negative units reflect west or south. As an example, the 1951 factor variable shows a 0.330 degree shift east, and 2.460 degree shift north. Observing this estimate over each year should give us a picture of how tornado occurrences are shifting over time, excluding climate effects. I believe this should represent what was called in the literature review a natural cycle.\\
+Based on the results of these estimates, we seem to observe possibly significant effects. alpha 1 was found to be significant at the 99.9\% level, and suggests a southwestward movement, with more southward movement than westward. This was a surprising effect, because I did not expect to find effects that would be shifting westward, though it is not the only effects at play. The precipitation variables were also found to be significant at the 99.9\% level. It had the opposite longitudinal effect than temperature, but a complimentary latitudinal effect. I do not personally have enough meteorological knowledge to know whether this would make sense or be a cause of concern. Each of the factor variables had varying degrees of significance, though they are frequently significant. They vary in estimation as well though the vast majority of them show a eastern shift and a northern shift, only two years showed significant movement westward, and only one year showed significant movement southward. The eastern shift particularly I think should be expected, especially if the climate variables are not necessarily suggesting eastward movement, because the literature review heavily suggested significant eastward movement, so it would be unusual if we did not find any evidence of it here. If there is in fact eastward movement than this model seems to suggest that it is mostly a natural cycle of time as opposed to being caused by global warming. Perhaps alongside this, precipitation is a much more significant factor in eastern movement as opposed to temperature, which also does not support a theory that global warming is causing this eastern shift that has been observed. Again, that is not to say temperature has no effect, though solely based off this model it appears that it has the opposite effect that I was expecting and it is other factors that is making the generally observed change. In turn, the latitudinal results are interesting as well. The literature review seemed to tell us that observations should be moving in both directions, though the year variables seemed to suggest only northward movement. This could mean that the increase in the lower Midwest is a result of a natural cycle, and the result in the southwest is represented by changes in climate, or this model could be doing poorly at representing this change. Regardless, the year variables do show opposite effects than both climate variables for latitude in this model.\\
+There are however, potential issues with this model. For one, the R squared for longitude is quite low, so it may be hard to trust the results, or we may want to look for a way to improve it. Also, weather is a very complex system, so the climate variables I used may not reflect the whole picture on their own. Additionally, it may be that it is more of a global system, which would not get represented only looking at United States climate data. For example, the arctic warming that was discussed earlier, or if some other similar relationship could be happening as a result of climate in Mexico or even Europe. Furthermore, there are some variables that represent large weather systems (such as El Nino Southern Oscillation) that is found in some of the literature review, but I do not have data for, nor do I really understand. These are specific examples of additional climate variables that may have an impact when excluded. The hope is that even if it is not a direct representation, that looking at United States climate differences would still reflect some of these differences. Another issues that has been mentioned previously is the differences in observations in older data than more modern data, which is likely caused by improved technology such as Doppler radar, and increased population density. One potential solution I had was to remove EF0 scale tornadoes, under the idea that these may be the hardest to pick up and thus the most effected by new technology. I ran the above model using this new data set. To take a step further I also excluded data prior to 1970 and ran the same model using that data set. These two new results are below in table 4. Looking at the results there do not appear to be any major changes in the new regression results. The same highly significant variables stayed highly significant in the same direction with relatively similar strength. While the there were slight changes in the size of the estimates, the main interest I had in the changes is how the R squared changed. The longitude R squared actually got worse in the two new models, though the best latitude R squared was in the third data set which excluded EF0s and old data. Since it also had the middle R squared for longitude I thought this one might be worth considering, though again, they do all generally agree with each other in what trends are happening. 
+
+\section{Conclusion}\label{sec:conclusion}
+\hspace{1cm} This paper attempted to find the effect of climate change on spatial shifts in tornado occurrences by linear regression. This regression consists of temperature, precipitation and year as a factor variable regressed over longitudinal latitudinal coordinates. Literature review on this topic suggests an eastward shift, alongside both northward and southward, or just pure eastward shift. There has been much research and less concrete answers on exactly why this is. The difficulty to answer this comes partly from the complexity and lack of total understanding of weather, and partly from the change in ability to observe tornado occurrences over the decades. Many studies suggest the but do not confirm climate effects. My own empirical research found significant evidence of an eastward shift as well, coming from precipitation and changes over time, but actually increased temperatures represented westward change. Most variables were significant, but the trustworthiness of the model itself may be in question. A likely culprit of this I believe is that the variables used and geographic space they are measured in may be too simple and small of an area to represent a complex global system. Nevertheless, I still believe that it does indicate that climate, including temperature, does have an impact on tornado occurrences, even if we are not certain about what this effect may be. This in turn highlights even greater importance of what is going on with climate change. There are many interacting systems on our earth and severe weather is just one example of something that will have unexpected consequences and changes in response to it, but it does seem to be proven that there are in fact real changes as a result of it.  
+
+\section{Tables and Figures}
+\input{tornado_summary.tex}
+
+I am having issues with exporting tables and out of time before PS11 is due. Will fix soon
+
+\section{references}
+\bibliographystyle{plain} 
+\bibliography{references.bib}
+
+
+
+
+
+
+\end{document}
