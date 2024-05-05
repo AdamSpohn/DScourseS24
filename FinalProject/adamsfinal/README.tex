@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{hyperref}
+
+\title{FinalProject Script}
+\author{Adam Spohn}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This README file provides instructions on how to obtain the results presented in my final paper found in the "FinalProject\_Spohn.pdf" file. 
+
+\section{Datasets}
+The final paper utilizes two datasets which are in the files:
+\begin{enumerate}
+    \item \textbf{1950-2021\_all\_tornadoes.csv} which can be found on kaggle
+    \item \textbf{county\_temperature.csv} which can be found on github
+    \end{enumerate}
+    These are read in by the script "finalProject.R".
+
+These datasets are provided in the same folder as this README file and are neccessary for running the rest of the "finalProject.R" script. The script also cleans the data to match the purposes of this paper.
+
+\section{Results, Tables, and Figures}
+To replicate the results found in the paper, the "finalProject.R" script creates plots from the data, makes tables, runs regressions, and makes tables from these results. 
+\begin{enumerate}
+    \item For summary statistics, a latex code is created by the master script which can be ran in overleaf to produce the summary stats tables. these latex codes can be seen in:
+    \begin{itemize}
+        \item summary\_table.tex
+        \item summary\_table\_EF1plus.tex
+        \item summary\_table\_EF1plus\_recent.tex 
+        \end{itemize}
+    \item The script also creates plots to vizualize the data, I exported these plots as pngs, and these can be found in the files below.
+    \begin{itemize}
+        \item latplot.png
+        \item longplot.png
+        \item Rplot.png
+    \end{itemize}
+    \item The results of the regressions were exported as tables in a latex code, when ran in overleaf they become the table of estimates. The latex codes are in the following files:
+    \begin{itemize}
+        \item reg1.tex
+        \item reg2.tex
+    \end{itemize}
+\end{enumerate}
+
+\section{Conclusion}
+If you have the data sets locally, you should be able to run the "finalProject.R" script and get these same results. If you export the pngs and load the latex codes in overleaf you can replicate the tables and plots as well.
+
+\end{document}
